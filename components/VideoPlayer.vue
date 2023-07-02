@@ -2,7 +2,7 @@
   <iframe
     width="560"
     height="315"
-    :src="`https://player.vimeo.com/video/${props.videoId}`"
+    :src="`https://player.vimeo.com/video/${videoId}`"
     title="Video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -13,8 +13,8 @@
 <script setup>
 const props = defineProps({
   videoId: {
-    type: String,
+    type: Number,
     required: true,
   },
-});
+})
 </script>
